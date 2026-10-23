@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Ambiente e ferramentas
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Índices gerados (o padrão fica em ~/.cache/ufdr-mcp, mas UFDR_MCP_CACHE pode apontar para cá)
+*.sqlite
+*.building
+
+# Evidências: nunca versionar material de casos
+*.ufdr
+*.z[0-9][0-9]
+*.ufd
+*.ufdx
+report.xml
+
+# Editores e sistema
+.vscode/
+.idea/
+.claude/settings.local.json
+Thumbs.db
+.DS_Store

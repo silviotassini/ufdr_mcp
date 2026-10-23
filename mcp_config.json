@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ufdr": {
+      "command": "uv",
+      "args": ["run", "--directory", "/caminho/ufdr_mcp", "ufdr-mcp"]
+    }
+  }
+}

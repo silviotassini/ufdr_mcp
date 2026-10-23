@@ -1,0 +1,28 @@
+[project]
+name = "ufdr-mcp"
+version = "0.1.0"
+description = "Servidor MCP para relatórios UFDR (Cellebrite), lidos direto do .ufdr"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=2.0",
+    "ufdr-parser",
+]
+
+[project.scripts]
+ufdr-mcp = "ufdr_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ufdr_mcp"]
+
+[tool.uv.sources]
+ufdr-parser = { path = "../ufdr_parser", editable = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
